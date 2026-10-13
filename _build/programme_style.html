@@ -1,0 +1,96 @@
+<style>
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 4rem; /* more space before */
+    margin-bottom: 0.4rem; /* less space after */
+  }
+
+  h2 + table tr.session-start td,
+  h2 + table tr.independent-session td {
+    border-top: none;
+  }
+
+  /* Base cell spacing */
+  td,
+  th {
+    padding: 6px 8px;
+    vertical-align: top;
+  }
+
+  table a {
+    color: #222;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #999;
+    text-underline-offset: 3px;
+  }
+
+  table a:hover,
+  table a:focus {
+    color: #000;
+    text-decoration-style: solid;
+    text-decoration-color: #000;
+  }
+  /* Visited links */
+  table a:visited {
+    color: #1a1a1a;
+  }
+
+  /* Session boundaries */
+  /* ===== SESSION START ===== */
+  .session-start td {
+    border-top: 1.5px solid #999;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    font-weight: bold;
+  }
+
+  /* ===== SESSION END ===== */
+  .session-end td {
+    border-bottom: none;
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  /* No borders inside session */
+  .chair-row td,
+  .session-paper td {
+    border-bottom: none;
+  }
+
+  /* ===== INDEPENDENT SESSION ===== */
+  .independent-session td {
+    border-top: 1.5px solid #999;
+    border-bottom: 1.5px solid #999;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  /* Breaks */
+  .break-row td {
+    border-top: 1.5px solid #999;
+    border-bottom: 1.5px solid #999;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .break-row td:nth-child(4) {
+    font-style: italic;
+  }
+
+  /* Prevent double line below the break */
+  .break-row + tr.session-start td,
+  .break-row + tr.independent-session td {
+    border-top: none;
+  }
+
+  .break-row td::before,
+  .break-row td::after {
+    content: "";
+    display: block;
+    height: 8px;
+  }
+
+</style>

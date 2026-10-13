@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="abstract">
+  <p class="back-top"><a href="{{ '/' | relative_url }}">← Πρόγραμμα</a></p>
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="abstract-subtitle">{{ page.subtitle }}</p>{% endif %}
+  <div class="byline">
+    <p class="authors">{{ page.authors }}</p>
+    {% if page.affiliation and page.affiliation != "" %}<p class="affiliation">{{ page.affiliation }}</p>{% endif %}
+  </div>
+  {{ content }}
+</article>

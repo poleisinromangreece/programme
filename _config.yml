@@ -1,0 +1,20 @@
+# Site settings for GitHub Pages (Jekyll)
+title: "Οι πόλεις της Ελλάδας από τον Αύγουστο έως την Τετραρχία"
+subtitle: "Πολιτισμός – κοινωνία – θεσμοί"
+organiser: "Εν Αθήναις Αρχαιολογική Εταιρεία"
+place_date: "Αθήνα, 3–5 Δεκεμβρίου 2026"
+description: "Πρόγραμμα και περιλήψεις του συνεδρίου «Οι πόλεις της Ελλάδας από τον Αύγουστο έως την Τετραρχία: Πολιτισμός – κοινωνία – θεσμοί», Αθήνα, 3–5 Δεκεμβρίου 2026."
+lang: el
+
+# GitHub Pages fills in url/baseurl automatically from the repository name.
+# Only if you preview locally or use a custom domain, set them here, e.g.
+# baseurl: "/repository-name"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - _build
+  - README.md
+  - "*.xlsx"
