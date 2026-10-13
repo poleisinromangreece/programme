@@ -24,7 +24,12 @@
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <p class="subtitle">{{ site.subtitle }}</p>
       <p class="place-date">{{ site.place_date }}</p>
-      <p class="venue">Η εκδήλωση θα πραγματοποιηθεί στο <a href="{{ site.venue_url }}">{{ site.venue_name }}</a> (<a href="{{ site.venue_map_url }}">{{ site.venue_address }}</a>)</p>
+      {% if page.url == '/' %}
+      <p class="venue">
+        <a href="{{ site.venue_url }}">{{ site.venue_name }}</a><br>
+        (<a class="nowrap" href="{{ site.venue_map_url }}">{{ site.venue_address }}</a>)
+      </p>
+      {% endif %}
     </div>
   </section>
 
