@@ -11,17 +11,35 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <p class="organiser">{{ site.organiser }}</p>
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <p class="subtitle">{{ site.subtitle }}</p>
-      <p class="place-date">{{ site.place_date }}</p>
+  <header class="society-bar">
+    <div class="wrap society-inner">
+      <a class="society-logo" href="https://www.archetai.gr/" title="{{ site.organiser }}">
+        <img src="{{ '/assets/images/logo-full.png' | relative_url }}" alt="Η εν Αθήναις Αρχαιολογική Εταιρεία — έτος ίδρυσης 1837">
+      </a>
     </div>
   </header>
 
+  <section class="conf-head">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <p class="subtitle">{{ site.subtitle }}</p>
+      <p class="place-date">{{ site.place_date }}</p>
+      <p class="venue">Η εκδήλωση θα πραγματοποιηθεί στο <a href="{{ site.venue_url }}">{{ site.venue_name }}</a> (<a href="{{ site.venue_map_url }}">{{ site.venue_address }}</a>)</p>
+    </div>
+  </section>
+
   <main class="wrap">
     {{ content }}
+
+    {% if page.url == '/' %}
+    <section class="venue-map" id="venue">
+      <h2>Τόπος διεξαγωγής</h2>
+      <p><a href="{{ site.venue_url }}">{{ site.venue_name }}</a><br>
+         <a href="{{ site.venue_map_url }}">{{ site.venue_address }}</a></p>
+      <iframe src="https://www.google.com/maps?q={{ site.venue_lat }},{{ site.venue_lon }}&amp;z=17&amp;output=embed"
+              title="Χάρτης: {{ site.venue_name }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </section>
+    {% endif %}
   </main>
 
   <footer class="site-footer">

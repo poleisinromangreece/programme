@@ -1,11 +1,14 @@
 :root {
-  --ink: #1f1d1a;
-  --muted: #6b655c;
-  --rule: #b9b1a4;
-  --rule-light: #e6e0d6;
-  --accent: #7a2e1d;      /* terracotta */
-  --bg: #fdfbf7;
-  --band: #f3eee5;
+  /* colours of www.archetai.gr */
+  --ink: #333333;
+  --muted: #666666;
+  --rule: #c9c7b8;
+  --rule-light: #e4e2d9;
+  --accent: #556997;      /* the Society's blue (header rule) */
+  --accent-dark: #3f5079;
+  --bg: #ffffff;
+  --band: #ecebe4;        /* header background */
+  --band-dark: #d4d2c2;   /* darker panel */
 }
 
 * { box-sizing: border-box; }
@@ -26,21 +29,20 @@ body {
 a { color: var(--accent); }
 
 /* ---------- header / footer ---------- */
-.site-header {
+.society-bar {
   background: var(--band);
-  border-bottom: 3px double var(--rule);
-  padding: 36px 0 28px;
+  border-bottom: 2px solid var(--accent);
+}
+.society-inner { padding-top: 0; padding-bottom: 0; }
+.society-logo { display: inline-block; line-height: 0; }
+.society-logo img { width: 430px; max-width: 100%; height: auto; display: block; }
+
+.conf-head {
   text-align: center;
+  padding: 34px 0 26px;
+  border-bottom: 1px solid var(--rule-light);
 }
-.site-header p { margin: 0; }
-.organiser {
-  font-family: "Noto Sans", Arial, sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 10px !important;
-}
+.conf-head p { margin: 0; }
 .site-title {
   display: block;
   font-size: clamp(1.5rem, 3.6vw, 2.2rem);
@@ -49,7 +51,7 @@ a { color: var(--accent); }
   color: var(--ink);
   text-decoration: none;
 }
-.subtitle { font-size: 1.15rem; font-style: italic; margin-top: 6px !important; }
+.subtitle { font-size: 1.15rem; font-style: italic; margin-top: 6px !important; color: var(--muted); }
 .place-date {
   font-family: "Noto Sans", Arial, sans-serif;
   margin-top: 14px !important;
@@ -58,7 +60,8 @@ a { color: var(--accent); }
 }
 .site-footer {
   margin-top: 64px;
-  border-top: 1px solid var(--rule-light);
+  background: var(--band);
+  border-top: 2px solid var(--accent);
   padding: 20px 0 32px;
   font-family: "Noto Sans", Arial, sans-serif;
   font-size: 0.85rem;
@@ -76,17 +79,17 @@ main { padding-top: 24px; }
   margin: 8px 0 0;
 }
 .day-nav a {
-  text-decoration: none; border: 1px solid var(--rule); border-radius: 999px;
-  padding: 4px 14px; color: var(--ink); background: #fff;
+  text-decoration: none; border: 1px solid var(--band-dark); border-radius: 4px;
+  padding: 5px 14px; color: var(--ink); background: var(--band);
 }
-.day-nav a:hover { border-color: var(--accent); color: var(--accent); }
+.day-nav a:hover { border-color: var(--accent); color: #fff; background: var(--accent); }
 
 h2 {
   font-size: 1.4rem;
   margin-top: 3.5rem;
   margin-bottom: 0.4rem;
   padding-bottom: 6px;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 2px solid var(--accent);
   scroll-margin-top: 16px;
 }
 
@@ -176,3 +179,10 @@ h2 + table tr.independent-session td { border-top: none; }
 .abstract hr { border: none; border-top: 1px solid var(--rule-light); margin: 32px 0 12px; }
 
 .intro { text-align: center; color: var(--muted); font-style: italic; margin: 4px 0 12px; }
+
+/* ---------- venue ---------- */
+.venue { margin-top: 10px !important; font-size: 0.98rem; }
+.venue a { color: var(--accent-dark); }
+.venue-map p { margin: 8px 0 14px; }
+.venue-map iframe { width: 100%; height: 420px; border: 1px solid var(--rule); display: block; }
+@media (max-width: 640px) { .venue-map iframe { height: 300px; } }
