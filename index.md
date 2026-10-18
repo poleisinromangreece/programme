@@ -419,6 +419,13 @@ published: true
     <td><a href="{{ site.baseurl }}/abstracts/Minartzidou.html">Νομισματικές όψεις στον 3ο αιώνα μ.Χ.: Η εικονογραφία των πόλεων στον ελλαδικό χώρο</a></td>
   </tr>
 
+  <tr class="break-row">
+    <td>16:30</td>
+    <td>17:00</td>
+    <td></td>
+    <td>Διάλειμμα</td>
+  </tr>
+
   <tr class="independent-session">
     <td>17:00</td>
     <td>17:45</td>

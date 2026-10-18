@@ -11,8 +11,12 @@ Programma_synedriou*.xlsx found in that folder or in the folders above it.
 The Excel file is the single source of truth for order, times, speakers and
 titles. Abstract bodies are never touched; only their front matter and the
 "back to programme" link at the bottom are rewritten.
+
+After the build, every file of the folder that differs is copied to the other folder of FOLDERS (the working copy
+in the conference archive <-> the git clone of the site), so it does not matter which copy of build.py is run.
+Nothing is deleted there, and a file that is newer there (edited by hand) is not overwritten: it is reported.
 """
-import json, os, re, sys
+import datetime, filecmp, json, os, re, shutil, sys
 import openpyxl
 
 # ---------------------------------------------------------------- settings
@@ -21,6 +25,13 @@ PAGE_TITLE = 'Πρόγραμμα συνεδρίου'
 INTRO = ''   # optional sentence shown above the day buttons
 ABSTRACT_URL = '{{ site.baseurl }}/abstracts/%s.html'
 PROGRAMME_URL = '{{ site.baseurl }}/'          # where index.md is served
+
+# the two copies of the site: the build writes into the one it runs from and copies the result to the other
+FOLDERS = [r'D:\Users\Georgios\Desktop\Archive\Συνέδρια\2026-12-03–05 Η Ελλάδα στη ρωμαϊκή Ρωμαϊκή Οικουμένη\github',
+           r'D:\Users\Georgios\Desktop\Archive\Python\GitHub\poleisinromangreece\programme']
+SKIP = {'.git', '__pycache__'}                  # never copied
+# where the Excel programme is looked for when no file is given (besides the folders above the site)
+EXCEL_DIR = r'D:\Users\Georgios\Desktop\Archive\Συνέδρια\2026-12-03–05 Η Ελλάδα στη ρωμαϊκή Ρωμαϊκή Οικουμένη\Πρόγραμμα Συνεδρίου'
 
 # keyword found in column D (speakers)  ->  abstract file name (without .md)
 SLUGS = [
@@ -52,6 +63,13 @@ class Book:
         v = self.wb[sheet][coord].value
         if isinstance(v, str) and v.startswith('='):
             return self.formula(sheet, v[1:])
+        # a time typed into a cell (16:30) is read as a clock time: as a fraction of the day, like the formulas
+        if isinstance(v, datetime.datetime):
+            v = v.time()
+        if isinstance(v, datetime.time):
+            return (v.hour * 3600 + v.minute * 60 + v.second) / 86400
+        if isinstance(v, datetime.timedelta):
+            return v.total_seconds() / 86400
         return v
 
     def formula(self, sheet, f):
@@ -192,6 +210,31 @@ def main(xlsx, folder):
     for p in problems:
         print('WARNING:', p)
 
+def mirror(src, dst):
+    """copy every file of src that differs to dst (same relative path); nothing is deleted in dst, and a file
+    that is newer in dst than in src (edited there by hand) is left alone and reported"""
+    if not os.path.isdir(dst):
+        print(f'WARNING: {dst} not found: nothing copied there.')
+        return
+    copied, kept = [], []
+    for root, dirs, files in os.walk(src):
+        dirs[:] = [d for d in dirs if d not in SKIP]
+        for f in files:
+            a = os.path.join(root, f)
+            rel = os.path.relpath(a, src)
+            b = os.path.join(dst, rel)
+            if os.path.exists(b) and filecmp.cmp(a, b, shallow=False):
+                continue
+            if os.path.exists(b) and os.path.getmtime(b) > os.path.getmtime(a):
+                kept.append(rel)
+                continue
+            os.makedirs(os.path.dirname(b), exist_ok=True)
+            shutil.copy2(a, b)
+            copied.append(rel)
+    print(f'Copied to {dst}: {len(copied)} file(s)' + (f' ({", ".join(copied)})' if copied else ''))
+    for rel in kept:
+        print(f'WARNING: {rel} is newer in {dst} (edited there?): not overwritten. Copy it back by hand if that version is right.')
+
 def find_excel(start):
     d = os.path.abspath(start)
     for _ in range(4):                     # markdown, Abstracts, conference folder, ...
@@ -200,6 +243,11 @@ def find_excel(start):
         if hits:
             return max(hits, key=os.path.getmtime)
         d = os.path.dirname(d)
+    if os.path.isdir(EXCEL_DIR):           # e.g. when run from the git clone of the site
+        hits = [os.path.join(EXCEL_DIR, f) for f in os.listdir(EXCEL_DIR)
+                if f.lower().startswith('programma_synedriou') and f.lower().endswith('.xlsx') and not f.startswith('~$')]
+        if hits:
+            return max(hits, key=os.path.getmtime)
     return None
 
 if __name__ == '__main__':
@@ -215,3 +263,8 @@ if __name__ == '__main__':
     print('Excel:', xlsx)
     print('Output folder:', folder)
     main(xlsx, folder)
+    same = lambda p, q: os.path.normcase(os.path.abspath(p)) == os.path.normcase(os.path.abspath(q))
+    if any(same(folder, f) for f in FOLDERS):        # an output folder given by hand is not mirrored
+        for other in FOLDERS:
+            if not same(folder, other):
+                mirror(folder, other)

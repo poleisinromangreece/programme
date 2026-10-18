@@ -28,6 +28,16 @@ What it does:
 - warns about talks with no abstract file, duplicated speakers, and abstract
   files no longer in the programme.
 
+Two copies of the site: the working copy (`...\Συνέδρια\...\github`) and the git
+clone (`...\Python\GitHub\poleisinromangreece\programme`), both listed in
+`FOLDERS` at the top of `build.py`. The build writes into the copy it runs from
+and then copies every file that differs to the other one (never `.git`; nothing
+is deleted). A file that is newer in the other copy (edited there by hand) is
+not overwritten: the build prints a warning instead. Without an Excel argument
+the newest `Programma_synedriou*.xlsx` of `Πρόγραμμα Συνεδρίου` is used, so
+`python _build/build.py` also works from the git clone. Commit and push from
+the git clone yourself.
+
 Chairs: a row with `Πρόεδρος:` in column D (Speakers) is shown as a
 "Πρόεδρος: …" line, with the name taken from column E. Leave E empty
 to show the line with no name.
