@@ -13,4 +13,4 @@ At the same time, they offer an essential and original point of departure for ev
 The Boeotian material—dating to the Roman period—confirms the existence of particularly close ties with Attica. The funerary landscape is largely dominated by stelae of Attic manufacture, whose typological and iconographic features exerted a significant influence on local production. Nevertheless, while Attic models appear preeminent, the presence of influences from other Greek regions should not be entirely discounted.
 
 ---
-[Επιστροφή στο πρόγραμμα της 2ης ημέρας]({{ site.baseurl }}/#day-2)
+[Επιστροφή στο πρόγραμμα της 3ης ημέρας]({{ site.baseurl }}/#day-3)

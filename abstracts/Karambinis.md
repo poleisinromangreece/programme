@@ -23,4 +23,4 @@ Until the early twentieth century, scholarly consensus held that gladiatorial sp
 While this reassessment has been decisive, research has largely focused on documenting presence rather than analysing patterns of adoption and absence. A key parameter remains insufficiently explored: the relationship between the number of cities that hosted gladiatorial spectacles and the total number of active urban centres within each region. Preliminary research indicates pronounced regional disparities. In Egypt, such shows are scarcely attested, while in Syro-Palestine they appear mainly in areas with a strong military presence. In southern Greece, very few cities hosted gladiatorial spectacles compared with neighbouring regions such as Macedonia, Thrace, and western Asia Minor, despite the high number of urban centres active there during the Roman Imperial period. This paper examines the distribution of gladiatorial spectacles in the Roman East, focusing on the reasons for their relative rarity in southern Greece.
 
 ---
-[Επιστροφή στο πρόγραμμα της 3ης ημέρας]({{ site.baseurl }}/#day-3)
+[Επιστροφή στο πρόγραμμα της 2ης ημέρας]({{ site.baseurl }}/#day-2)

@@ -19,14 +19,25 @@ published: true
   </tr>
 
   <tr class="independent-session">
+    <td>08:30</td>
+    <td>09:00</td>
+    <td></td>
+    <td>Εγγραφή συνέδρων</td>
+  </tr>
+
+  <tr class="independent-session">
     <td>09:00</td>
     <td>09:15</td>
     <td></td>
-    <td>Σύντομος χαιρετισμός</td>
+    <td>Χαιρετισμός</td>
   </tr>
 
   <tr class="session-start">
-    <td colspan="4"><b>1. Το αστικό τοπίο (από το γενικό στο ειδικό)</b></td>
+    <td colspan="4"><b>1. Το αστικό τοπίο</b></td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
   </tr>
 
   <tr class="session-paper">
@@ -61,7 +72,11 @@ published: true
     <td>11:15</td>
     <td>11:45</td>
     <td></td>
-    <td>Διάλειμμα καφέ</td>
+    <td>Διάλειμμα</td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
   </tr>
 
   <tr class="session-paper">
@@ -78,167 +93,65 @@ published: true
     <td><a href="{{ site.baseurl }}/abstracts/Antoniadis.html">Third-Century Patras: Resilience and Urban Adaptation in Roman Greece</a></td>
   </tr>
 
-  <tr class="session-paper session-end">
+  <tr class="session-paper">
     <td>12:45</td>
     <td>13:15</td>
     <td>Ελένη Παπαγιάννη</td>
     <td><a href="{{ site.baseurl }}/abstracts/Papagianni.html">Colonia Iulia Diensis: προσεγγίζοντας την πρώιμη ρωμαϊκή αποικία του Δίου</a></td>
   </tr>
 
-  <tr class="break-row">
+  <tr class="session-paper session-end">
     <td>13:15</td>
-    <td>16:30</td>
-    <td></td>
-    <td>Μεσημεριανό διάλειμμα</td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>16:30</td>
-    <td>17:00</td>
+    <td>13:45</td>
     <td>Δημήτρης Δαμάσκος, Δημητρία Μαλαμίδου, Βαγγέλης Παπαϊωάννου</td>
     <td><a href="{{ site.baseurl }}/abstracts/Damaskos-Malamidou-Papaioannou.html">Η Αμφίπολη κατά τους αυτοκρατορικούς χρόνους</a></td>
   </tr>
 
+  <tr class="break-row">
+    <td>13:45</td>
+    <td>15:00</td>
+    <td></td>
+    <td>Διάλειμμα</td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
   <tr class="session-paper">
-    <td>17:00</td>
-    <td>17:30</td>
+    <td>15:00</td>
+    <td>15:30</td>
     <td>Michel Sève</td>
     <td><a href="{{ site.baseurl }}/abstracts/Seve.html">Τί άλλαξε στούς Φιλίππους μετά την ίδρυση της ρωμαϊκής αποικίας;</a></td>
   </tr>
 
   <tr class="session-paper">
-    <td>17:30</td>
-    <td>18:00</td>
-    <td>Μανόλης Πετράκης, Γεώργιος Τσολάκης, Άγγελος Χανιώτης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Petrakis-Tsolakis-Chaniotis.html">Μια πόλη αναγεννιέται. Η Λύττος στη ρωμαϊκή οικουμένη</a></td>
-  </tr>
-
-  <tr class="session-paper session-end">
-    <td>18:00</td>
-    <td>18:30</td>
+    <td>15:30</td>
+    <td>16:00</td>
     <td>Κωνσταντίνος Ζάχος</td>
     <td><a href="{{ site.baseurl }}/abstracts/Zachos.html">Institutions, Cults, and Urban Planning in Nicopolis: Shaping an Imperial City from Augustus to the Third Century C.E.</a></td>
   </tr>
 
+  <tr class="session-paper session-end">
+    <td>16:00</td>
+    <td>16:30</td>
+    <td>Μανόλης Πετράκης, Γεώργιος Τσολάκης, Άγγελος Χανιώτης</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Petrakis-Tsolakis-Chaniotis.html">Μια πόλη αναγεννιέται. Η Λύττος στη ρωμαϊκή οικουμένη</a></td>
+  </tr>
+
   <tr class="break-row">
-    <td>18:30</td>
-    <td>18:45</td>
+    <td>16:30</td>
+    <td>17:00</td>
     <td></td>
     <td>Διάλειμμα</td>
   </tr>
 
-  <tr class="independent-session">
-    <td>18:45</td>
-    <td>20:15</td>
-    <td></td>
-    <td>Κεντρική ομιλία</td>
-  </tr>
-
-</table>
-
-<h2 id="day-2">2η μέρα – Παρασκευή 4 Δεκεμβρίου 2026</h2>
-<table style="width: 100%; border-collapse: collapse">
-  <tr>
-    <th style="width: 10%"></th>
-    <th style="width: 10%"></th>
-    <th style="width: 30%"></th>
-    <th style="width: 50%"></th>
-  </tr>
-
   <tr class="session-start">
-    <td colspan="4"><b>2. Θεσμοί και κοινωνία</b></td>
+    <td colspan="4"><b>2. Αυτοκράτορας και αυτοκρατορική ιδεολογία</b></td>
   </tr>
 
-  <tr class="session-paper">
-    <td>09:00</td>
-    <td>09:30</td>
-    <td>Σοφία Ζουμπάκη</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Zoumpaki.html">Μη πολιτικές βουλές στις ελληνικές πόλεις κατά την αυτοκρατορική περίοδο</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>09:30</td>
-    <td>10:00</td>
-    <td>Γεώργιος Κουκοβασίλης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Koukovasilis.html">Ο «λακωνικός λόχος» του Καρακάλλα: Στρατιωτική αναβίωση, τοπικοί θεσμοί και αυτοκρατορική πολιτική στη Σπάρτη του 3ου αι. μ.Χ.</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>10:00</td>
-    <td>10:30</td>
-    <td>Ελένη Θεοδώρου</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Theodorou.html">Παρατηρήσεις επί των αρμοδιοτήτων και της θεσμικής οργάνωσης του αξιώματος του αγορανόμου σε πόλεις της Πελοποννήσου κατά τη ρωμαϊκή αυτοκρατορική εποχή</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>10:30</td>
-    <td>11:00</td>
-    <td>Παντελής Νίγδελης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Nigdelis.html">Η ελίτ της αποικίας του Δίου και η συμβολή της στην εδραίωση της ρωμαϊκής ταυτότητας της πόλης. Η περίπτωση της οικογένειας των C. Mestrii</a></td>
-  </tr>
-
-  <tr class="session-paper session-end">
-    <td>11:00</td>
-    <td>11:30</td>
-    <td>Γιώργος Μητρόπουλος</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Mitropoulos.html">Προσεγγίζοντας το άπιαστο: Οι αυτοκράτορες και οι γυναίκες στη ρωμαϊκή Ελλάδα μέσα από τις επιγραφικές μαρτυρίες</a></td>
-  </tr>
-
-  <tr class="break-row">
-    <td>11:30</td>
-    <td>12:00</td>
-    <td></td>
-    <td>Διάλειμμα καφέ</td>
-  </tr>
-
-  <tr class="session-start">
-    <td colspan="4"><b>3. Νεκροταφεία – επιτύμβια</b></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>12:00</td>
-    <td>12:30</td>
-    <td>Μιμίκα Γιαννοπούλου</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Giannopoulou.html">Βίος γυναικών στην αρχαία Μεσσήνη κατά τη ρωμαϊκή περίοδο: κοινωνικοί ρόλοι και μνήμη μέσα από επιγραφικές μαρτυρίες και ταφικά ευρήματα</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>12:30</td>
-    <td>13:00</td>
-    <td>Margherita Bonanno Aravantinos</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Bonanno_Aravantinos.html">Roman Funerary Stelae from Thebes: Expressions of Cultural and Social Identity between Patronage and Production Workshops</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>13:00</td>
-    <td>13:30</td>
-    <td>Βασιλική Πατσιαδά, Καλλιόπη Μπαϊράμη</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Bairami-Patsiada.html">Η Ρόδος στους ρωμαϊκούς χρόνους: μαρτυρίες από την νεκρόπολη και την πόλη της Ρόδου</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>13:30</td>
-    <td>14:00</td>
-    <td>Αγλαΐα Κουτρομπή</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Koutrompi.html">Ταφικό τοπίο και κοινωνική ιεράρχηση στη ρωμαϊκή αποικία της Κορίνθου</a></td>
-  </tr>
-
-  <tr class="session-paper session-end">
-    <td>14:00</td>
-    <td>14:30</td>
-    <td>Θεοδοσία Στεφανίδου-Τιβερίου, Ηλίας Σβέρκος</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Tiveriou-Sverkos.html">Ταφικά μνημεία κυκλικής μορφής (Tumuli) από την Κασσανδρεία</a></td>
-  </tr>
-
-  <tr class="break-row">
-    <td>14:30</td>
-    <td>17:00</td>
-    <td></td>
-    <td>Μεσημεριανό διάλειμμα</td>
-  </tr>
-
-  <tr class="session-start">
-    <td colspan="4"><b>4. Αυτοκράτορας και αυτοκρατορική ιδεολογία</b></td>
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
   </tr>
 
   <tr class="session-paper">
@@ -255,18 +168,151 @@ published: true
     <td><a href="{{ site.baseurl }}/abstracts/Koursoumis.html">Imperial Cults in Colonia Laus Iulia Corinthiensis</a></td>
   </tr>
 
-  <tr class="session-paper">
+  <tr class="session-paper session-end">
     <td>18:00</td>
     <td>18:30</td>
     <td>Hans R. Goette</td>
     <td><a href="{{ site.baseurl }}/abstracts/Goette.html">The portraiture of emperor Caligula in the Greek cities</a></td>
   </tr>
 
+</table>
+
+<h2 id="day-2">2η μέρα – Παρασκευή 4 Δεκεμβρίου 2026</h2>
+<table style="width: 100%; border-collapse: collapse">
+  <tr>
+    <th style="width: 10%"></th>
+    <th style="width: 10%"></th>
+    <th style="width: 30%"></th>
+    <th style="width: 50%"></th>
+  </tr>
+
+  <tr class="session-start">
+    <td colspan="4"><b>3. Λατρείες και θεάματα</b></td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>09:00</td>
+    <td>09:30</td>
+    <td>Κατερίνα Τζαναβάρη</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Tzanavari.html">Απεικονίσεις ιερειών στη γλυπτική των πόλεων του βορειοελλαδικού χώρου κατά τους ρωμαϊκούς χρόνους</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>09:30</td>
+    <td>10:00</td>
+    <td>Αθανάσιος Ριζάκης</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Rizakis.html">Η θρησκευτική τοπιογραφία των πόλεων της Μακεδονίας κατά την περίοδο της αυτοκρατορίας: συνέχειες, ασυνέχειες, πολιτισμικές διασταυρώσεις και υβριδικές ταυτότητες</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>10:00</td>
+    <td>10:30</td>
+    <td>Μιχάλης Καραμπίνης</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Karambinis.html">Μονομαχικοί αγώνες: διασπορά στη Ρωμαϊκή Ανατολή και το αίνιγμα της νότιας Ελλάδας</a></td>
+  </tr>
+
   <tr class="session-paper session-end">
-    <td>18:30</td>
-    <td>19:00</td>
-    <td>Μαρία-Ιωάννα Χριστοπούλου</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Christopoulou.html">Το Αίγιο κατά τη ρωμαϊκή αυτοκρατορική περίοδο: η μαρτυρία των ανδριάντων αυτοκρατόρων και ιδιωτών</a></td>
+    <td>10:30</td>
+    <td>11:00</td>
+    <td>Valentina Di Napoli</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Di_Napoli.html">«καὶ γυναῖκες … ἐμαχέσαντο» (Δίων Κάσσιος 76, 16, 1): Οι γυναίκες και τα θεάματα της αρένας στη ρωμαϊκή Ελλάδα</a></td>
+  </tr>
+
+  <tr class="break-row">
+    <td>11:00</td>
+    <td>11:30</td>
+    <td></td>
+    <td>Διάλειμμα</td>
+  </tr>
+
+  <tr class="session-start">
+    <td colspan="4"><b>4. Θεσμοί και κοινωνία</b></td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>11:30</td>
+    <td>12:00</td>
+    <td>Σοφία Ζουμπάκη</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Zoumpaki.html">Μη πολιτικές βουλές στις ελληνικές πόλεις κατά την αυτοκρατορική περίοδο</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>12:00</td>
+    <td>12:30</td>
+    <td>Γεώργιος Κουκοβασίλης</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Koukovasilis.html">Ο «λακωνικός λόχος» του Καρακάλλα: Στρατιωτική αναβίωση, τοπικοί θεσμοί και αυτοκρατορική πολιτική στη Σπάρτη του 3ου αι. μ.Χ.</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>12:30</td>
+    <td>13:00</td>
+    <td>Ελένη Θεοδώρου</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Theodorou.html">Παρατηρήσεις επί των αρμοδιοτήτων και της θεσμικής οργάνωσης του αξιώματος του αγορανόμου σε πόλεις της Πελοποννήσου κατά τη ρωμαϊκή αυτοκρατορική εποχή</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>13:00</td>
+    <td>13:30</td>
+    <td>Παντελής Νίγδελης</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Nigdelis.html">Η ελίτ της αποικίας του Δίου και η συμβολή της στην εδραίωση της ρωμαϊκής ταυτότητας της πόλης. Η περίπτωση της οικογένειας των C. Mestrii</a></td>
+  </tr>
+
+  <tr class="session-paper session-end">
+    <td>13:30</td>
+    <td>14:00</td>
+    <td>Γιώργος Μητρόπουλος</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Mitropoulos.html">Προσεγγίζοντας το άπιαστο: Οι αυτοκράτορες και οι γυναίκες στη ρωμαϊκή Ελλάδα μέσα από τις επιγραφικές μαρτυρίες</a></td>
+  </tr>
+
+  <tr class="break-row">
+    <td>14:00</td>
+    <td>16:00</td>
+    <td></td>
+    <td>Διάλειμμα</td>
+  </tr>
+
+  <tr class="session-start">
+    <td colspan="4"><b>5. Νεκροταφεία - επιτύμβια</b></td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>16:00</td>
+    <td>16:30</td>
+    <td>Μιμίκα Γιαννοπούλου</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Giannopoulou.html">Βίος γυναικών στην αρχαία Μεσσήνη κατά τη ρωμαϊκή περίοδο: κοινωνικοί ρόλοι και μνήμη μέσα από επιγραφικές μαρτυρίες και ταφικά ευρήματα</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>16:30</td>
+    <td>17:00</td>
+    <td>Βασιλική Πατσιαδά, Καλλιόπη Μπαϊράμη</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Bairami-Patsiada.html">Η Ρόδος στους ρωμαϊκούς χρόνους: μαρτυρίες από την νεκρόπολη και την πόλη της Ρόδου</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>17:00</td>
+    <td>17:30</td>
+    <td>Αγλαΐα Κουτρομπή</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Koutrompi.html">Ταφικό τοπίο και κοινωνική ιεράρχηση στη ρωμαϊκή αποικία της Κορίνθου</a></td>
+  </tr>
+
+  <tr class="session-paper session-end">
+    <td>17:30</td>
+    <td>18:00</td>
+    <td>Θεοδοσία Στεφανίδου-Τιβερίου, Ηλίας Σβέρκος</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Tiveriou-Sverkos.html">Ταφικά μνημεία κυκλικής μορφής (Tumuli) από την Κασσανδρεία</a></td>
   </tr>
 
 </table>
@@ -281,109 +327,110 @@ published: true
   </tr>
 
   <tr class="session-start">
-    <td colspan="4"><b>5. Λατρείες και θεάματα</b></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>09:00</td>
-    <td>09:30</td>
-    <td>Αθανάσιος Ριζάκης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Rizakis.html">Η θρησκευτική τοπιογραφία των πόλεων της Μακεδονίας κατά την περίοδο της αυτοκρατορίας: συνέχειες, ασυνέχειες, πολιτισμικές διασταυρώσεις και υβριδικές ταυτότητες</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>09:30</td>
-    <td>10:00</td>
-    <td>Κατερίνα Τζαναβάρη</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Tzanavari.html">Απεικονίσεις ιερειών στη γλυπτική των πόλεων του βορειοελλαδικού χώρου κατά τους ρωμαϊκούς χρόνους</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>10:00</td>
-    <td>10:30</td>
-    <td>Valentina Di Napoli</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Di_Napoli.html">«καὶ γυναῖκες ... ἐμαχέσαντο» (Δίων Κάσσιος 76, 16, 1): Οι γυναίκες και τα θεάματα της αρένας στη ρωμαϊκή Ελλάδα</a></td>
-  </tr>
-
-  <tr class="session-paper session-end">
-    <td>10:30</td>
-    <td>11:00</td>
-    <td>Μιχάλης Καραμπίνης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Karambinis.html">Μονομαχικοί αγώνες: διασπορά στη Ρωμαϊκή Ανατολή και το αίνιγμα της νότιας Ελλάδας</a></td>
-  </tr>
-
-  <tr class="break-row">
-    <td>11:00</td>
-    <td>11:30</td>
-    <td></td>
-    <td>Διάλειμμα καφέ</td>
-  </tr>
-
-  <tr class="session-start">
     <td colspan="4"><b>6. Καλλιτεχνική και νομισματική παραγωγή</b></td>
   </tr>
 
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
   <tr class="session-paper">
-    <td>11:30</td>
-    <td>12:00</td>
+    <td>09:30</td>
+    <td>10:00</td>
     <td>Παναγιώτης Κωνσταντινίδης</td>
     <td><a href="{{ site.baseurl }}/abstracts/Konstantinidis.html">The so-called “Gymnasium of the Ptolemies” at Thera: Re-examination of the Evidence</a></td>
   </tr>
 
   <tr class="session-paper">
+    <td>10:00</td>
+    <td>10:30</td>
+    <td>Margherita Bonanno Aravantinos</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Bonanno_Aravantinos.html">Roman Funerary Stelae from Thebes: Expressions of Cultural and Social Identity between Patronage and Production Workshops</a></td>
+  </tr>
+
+  <tr class="session-paper session-end">
+    <td>10:30</td>
+    <td>11:00</td>
+    <td>Μαρία-Ιωάννα Χριστοπούλου</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Christopoulou.html">Το Αίγιο κατά τη ρωμαϊκή αυτοκρατορική περίοδο: η μαρτυρία των ανδριάντων αυτοκρατόρων και ιδιωτών</a></td>
+  </tr>
+
+  <tr class="break-row">
+    <td>11:00</td>
+    <td>11:30</td>
+    <td></td>
+    <td>Διάλειμμα</td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>11:30</td>
     <td>12:00</td>
-    <td>12:30</td>
     <td>Ναταλία Καζακίδη</td>
     <td><a href="{{ site.baseurl }}/abstracts/Kazakidi.html">Η γλυπτική της εξουσίας στη ρωμαϊκή Σικυώνα: αναθεωρώντας την παρακμή</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>12:00</td>
+    <td>12:30</td>
+    <td>Ιφιγένεια Λεβέντη</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Leventi.html">Γλυπτά των χρόνων της Ρωμαιοκρατίας από το ιερό του Απόλλωνος Πυθίου στην Περραιβία</a></td>
   </tr>
 
   <tr class="session-paper session-end">
     <td>12:30</td>
     <td>13:00</td>
-    <td>Ιφιγένεια Λεβέντη</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Leventi.html">Γλυπτά των χρόνων της Ρωμαιοκρατίας από το ιερό του Απόλλωνος Πυθίου στην Περραιβία</a></td>
-  </tr>
-
-  <tr class="break-row">
-    <td>13:00</td>
-    <td>15:30</td>
-    <td></td>
-    <td>Μεσημεριανό διάλειμμα</td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>15:30</td>
-    <td>16:00</td>
     <td>Φωτεινή Κοκκίνη, Γιάννης Μούρθος</td>
     <td><a href="{{ site.baseurl }}/abstracts/Kokkini-Mourthos.html">Η παραγωγή ψηφιδωτών δαπέδων στην επαρχία Αχαΐας από τα χρόνια του Αυγούστου μέχρι τα τέλη του 3ου αι. μ.Χ.</a></td>
   </tr>
 
+  <tr class="break-row">
+    <td>13:00</td>
+    <td>15:00</td>
+    <td></td>
+    <td>Διάλειμμα</td>
+  </tr>
+
+  <tr class="chair-row">
+    <td colspan="4">Πρόεδρος: </td>
+  </tr>
+
   <tr class="session-paper">
-    <td>16:00</td>
-    <td>16:30</td>
+    <td>15:00</td>
+    <td>15:30</td>
     <td>Δημήτρης Γρηγορόπουλος</td>
     <td><a href="{{ site.baseurl }}/abstracts/Grigoropoulos.html">Παραγωγή, διακίνηση και κατανάλωση κεραμικής στις πόλεις της επαρχίας Αχαΐας: status quaestionis και ερευνητικά ζητούμενα</a></td>
   </tr>
 
   <tr class="session-paper">
-    <td>16:30</td>
-    <td>17:00</td>
+    <td>15:30</td>
+    <td>16:00</td>
     <td>Χαρίκλεια Παπαγεωργιάδου</td>
     <td><a href="{{ site.baseurl }}/abstracts/Papageorgiadou.html">Between Identity and Remembrance in Roman Greece: The Numismatic Evidence for the Formation of a New Identity</a></td>
   </tr>
 
   <tr class="session-paper session-end">
-    <td>17:00</td>
-    <td>17:30</td>
+    <td>16:00</td>
+    <td>16:30</td>
     <td>Ευδοξία Μηντζαρίδου</td>
     <td><a href="{{ site.baseurl }}/abstracts/Minartzidou.html">Νομισματικές όψεις στον 3ο αιώνα μ.Χ.: Η εικονογραφία των πόλεων στον ελλαδικό χώρο</a></td>
   </tr>
 
   <tr class="independent-session">
-    <td>17:30</td>
+    <td>17:00</td>
+    <td>17:45</td>
+    <td></td>
+    <td>Κεντρική ομιλία</td>
+  </tr>
+
+  <tr class="independent-session">
+    <td>17:45</td>
     <td>18:00</td>
     <td></td>
-    <td>Σύντομο κλείσιμο</td>
+    <td>Λήξη του συνεδρίου</td>
   </tr>
 
 </table>

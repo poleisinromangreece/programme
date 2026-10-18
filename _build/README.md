@@ -28,6 +28,10 @@ What it does:
 - warns about talks with no abstract file, duplicated speakers, and abstract
   files no longer in the programme.
 
+Chairs: a row with `Πρόεδρος:` in column D (Speakers) is shown as a
+"Πρόεδρος: …" line, with the name taken from column E. Leave E empty
+to show the line with no name.
+
 Settings at the top of `build.py`: dates of the three days, page intro, URL
 pattern of the abstracts, and the speaker → abstract-file table (`SLUGS`).
 A new speaker needs a new line in `SLUGS` and a new file in `abstracts/`.

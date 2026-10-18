@@ -94,6 +94,8 @@ def parse(path):
             day['items'].append({'type': 'talk', 'no': int(a), 'speakers': sp, 'title': (e or '').strip(),
                                  'start': hhmm(bk.value(bk.main, f'B{r}')), 'end': hhmm(bk.value(bk.main, f'C{r}')),
                                  'slug': slug_for(sp)})
+        elif str(ws.cell(r, 4).value or '').strip().startswith('Πρόεδρος'):   # chair: name in column E
+            day['items'].append({'type': 'chair', 'name': str(e or '').strip()})
         elif e:                                                      # break / other item
             day['items'].append({'type': 'break' if e.startswith(BREAKS) else 'event', 'title': e.strip(),
                                  'start': hhmm(bk.value(bk.main, f'B{r}')), 'end': hhmm(bk.value(bk.main, f'C{r}'))})
@@ -125,6 +127,8 @@ def render(days):
             nxt = items[i + 1] if i + 1 < len(items) else None
             if it['type'] == 'session':
                 out += ['  <tr class="session-start">', f'    <td colspan="4"><b>{esc(it["title"])}</b></td>', '  </tr>', '']
+            elif it['type'] == 'chair':
+                out += ['  <tr class="chair-row">', f'    <td colspan="4">Πρόεδρος: {esc(it["name"])}</td>', '  </tr>', '']
             elif it['type'] == 'talk':
                 cls = 'session-paper' + (' session-end' if not nxt or nxt['type'] != 'talk' else '')
                 title = esc(it['title'])
@@ -154,13 +158,13 @@ def sync_abstract(path, talk, day_no):
     body += f'\n\n---\n[Επιστροφή στο πρόγραμμα της {day_no}ης ημέρας]({PROGRAMME_URL}#day-{day_no})\n'
     new = f'---\n{fm}\n---\n{body}'
     if new != txt:
-        open(path, 'w', encoding='utf-8').write(new)
+        open(path, 'w', encoding='utf-8', newline='\n').write(new)
         return True
     return False
 
 def main(xlsx, folder):
     days = parse(xlsx)
-    open(os.path.join(folder, 'index.md'), 'w', encoding='utf-8').write(render(days))
+    open(os.path.join(folder, 'index.md'), 'w', encoding='utf-8', newline='\n').write(render(days))
     absdir = os.path.join(folder, 'abstracts')
     used, changed, problems = set(), [], []
     for n, d in enumerate(days, 1):
