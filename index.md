@@ -103,8 +103,8 @@ published: true
   <tr class="session-paper session-end">
     <td>13:15</td>
     <td>13:45</td>
-    <td>Δημήτρης Δαμάσκος, Δημητρία Μαλαμίδου, Βαγγέλης Παπαϊωάννου</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Damaskos-Malamidou-Papaioannou.html">Η Αμφίπολη κατά τους αυτοκρατορικούς χρόνους</a></td>
+    <td>Michel Sève</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Seve.html">Τί άλλαξε στούς Φιλίππους μετά την ίδρυση της ρωμαϊκής αποικίας;</a></td>
   </tr>
 
   <tr class="break-row">
@@ -121,8 +121,8 @@ published: true
   <tr class="session-paper">
     <td>15:00</td>
     <td>15:30</td>
-    <td>Michel Sève</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Seve.html">Τί άλλαξε στούς Φιλίππους μετά την ίδρυση της ρωμαϊκής αποικίας;</a></td>
+    <td>Μανόλης Πετράκης, Γεώργιος Τσολάκης, Άγγελος Χανιώτης</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Petrakis-Tsolakis-Chaniotis.html">Μια πόλη αναγεννιέται. Η Λύττος στη ρωμαϊκή οικουμένη</a></td>
   </tr>
 
   <tr class="session-paper">
@@ -135,8 +135,8 @@ published: true
   <tr class="session-paper session-end">
     <td>16:00</td>
     <td>16:30</td>
-    <td>Μανόλης Πετράκης, Γεώργιος Τσολάκης, Άγγελος Χανιώτης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Petrakis-Tsolakis-Chaniotis.html">Μια πόλη αναγεννιέται. Η Λύττος στη ρωμαϊκή οικουμένη</a></td>
+    <td>Δημήτρης Δαμάσκος, Δημητρία Μαλαμίδου, Βαγγέλης Παπαϊωάννου</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Damaskos-Malamidou-Papaioannou.html">Η Αμφίπολη κατά τους αυτοκρατορικούς χρόνους</a></td>
   </tr>
 
   <tr class="break-row">
@@ -430,7 +430,7 @@ published: true
     <td>17:00</td>
     <td>17:45</td>
     <td></td>
-    <td>Κεντρική ομιλία</td>
+    <td>Roman Citizenship and its Value in the Roman Empire until and after the Constitutio Antoniniana</td>
   </tr>
 
   <tr class="independent-session">
