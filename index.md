@@ -132,16 +132,23 @@ published: true
     <td><a href="{{ site.baseurl }}/abstracts/Zachos.html">Institutions, Cults, and Urban Planning in Nicopolis: Shaping an Imperial City from Augustus to the Third Century C.E.</a></td>
   </tr>
 
-  <tr class="session-paper session-end">
+  <tr class="session-paper">
     <td>16:00</td>
     <td>16:30</td>
     <td>Δημήτρης Δαμάσκος, Δημητρία Μαλαμίδου, Βαγγέλης Παπαϊωάννου</td>
     <td><a href="{{ site.baseurl }}/abstracts/Damaskos-Malamidou-Papaioannou.html">Η Αμφίπολη κατά τους αυτοκρατορικούς χρόνους</a></td>
   </tr>
 
-  <tr class="break-row">
+  <tr class="session-paper session-end">
     <td>16:30</td>
     <td>17:00</td>
+    <td>Μαρία Τσούλη</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Tsouni.html">Η Ρωμαϊκή Σπάρτη μέσα από τα πορίσματα της αρχαιολογικής έρευνας των ετών 2006-2025. Συμβολή στην μελέτη της τοπογραφίας, της πολεοδομίας, της οικιστικής οργάνωσης, των χώρων λατρείας και των χώρων ταφής της ρωμαϊκής πόλης</a></td>
+  </tr>
+
+  <tr class="break-row">
+    <td>17:00</td>
+    <td>17:30</td>
     <td></td>
     <td>Διάλειμμα</td>
   </tr>
@@ -155,22 +162,22 @@ published: true
   </tr>
 
   <tr class="session-paper">
-    <td>17:00</td>
     <td>17:30</td>
+    <td>18:00</td>
     <td>Γεωργία Γαλάνη</td>
     <td><a href="{{ site.baseurl }}/abstracts/Galani.html">Η Μακεδονία την περίοδο των Φλαβίων: αυτοκρατορική ιδεολογία και επαρχιακή πραγματικότητα στα νομίσματα μιας ρωμαϊκής επαρχίας</a></td>
   </tr>
 
   <tr class="session-paper">
-    <td>17:30</td>
     <td>18:00</td>
+    <td>18:30</td>
     <td>Σωκράτης Κουρσούμης</td>
     <td><a href="{{ site.baseurl }}/abstracts/Koursoumis.html">Imperial Cults in Colonia Laus Iulia Corinthiensis</a></td>
   </tr>
 
   <tr class="session-paper session-end">
-    <td>18:00</td>
     <td>18:30</td>
+    <td>19:00</td>
     <td>Hans R. Goette</td>
     <td><a href="{{ site.baseurl }}/abstracts/Goette.html">The portraiture of emperor Caligula in the Greek cities</a></td>
   </tr>
@@ -198,7 +205,7 @@ published: true
     <td>09:00</td>
     <td>09:30</td>
     <td>Κατερίνα Τζαναβάρη</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Tzanavari.html">Απεικονίσεις ιερειών στη γλυπτική των πόλεων του βορειοελλαδικού χώρου κατά τους ρωμαϊκούς χρόνους</a></td>
+    <td><a href="{{ site.baseurl }}/abstracts/Tzanavari.html">Το ιερατείο της ισιακής λατρείας στη Μακεδονία και ο ρόλος του στη λειτουργία των ιερών</a></td>
   </tr>
 
   <tr class="session-paper">

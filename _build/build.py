@@ -47,6 +47,7 @@ SLUGS = [
     ('Di Napoli', 'Di_Napoli'), ('Καραμπίνης', 'Karambinis'), ('Κωνσταντινίδης', 'Konstantinidis'),
     ('Καζακίδη', 'Kazakidi'), ('Λεβέντη', 'Leventi'), ('Κοκκίνη', 'Kokkini-Mourthos'),
     ('Γρηγορόπουλος', 'Grigoropoulos'), ('Παπαγεωργιάδου', 'Papageorgiadou'), ('Μηντζαρίδου', 'Minartzidou'),
+    ('Τσούλη', 'Tsouni'),
 ]
 BREAKS = ('Διάλειμμα', 'Μεσημεριανό')          # rows rendered as break-row
 
