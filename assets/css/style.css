@@ -183,7 +183,7 @@ h2 + table tr.independent-session td { border-top: none; }
   border-bottom: 1px solid var(--rule-light); margin-top: 2rem;
   font-family: "Noto Sans", Arial, sans-serif; color: var(--muted);
 }
-.abstract p { text-align: justify; hyphens: auto; }
+.abstract p { text-align: left; hyphens: manual; overflow-wrap: break-word; }
 .abstract hr { border: none; border-top: 1px solid var(--rule-light); margin: 32px 0 12px; }
 
 .intro { text-align: center; color: var(--muted); font-style: italic; margin: 4px 0 12px; }
@@ -223,4 +223,4 @@ h2 + table tr.independent-session td { border-top: none; }
 .abstract-masthead a { color: var(--ink); text-decoration: none; }
 .abstract-masthead a:hover,
 .abstract-masthead a:focus-visible { text-decoration: underline; }
-.abstract-page main { padding-top: 12px; }
+.abstract-page main { max-width: 800px; padding-top: 12px; }
