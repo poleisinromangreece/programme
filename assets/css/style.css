@@ -45,19 +45,24 @@ a { color: var(--accent); }
 .conf-head p { margin: 0; }
 .site-title {
   display: block;
-  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.25;
   color: var(--ink);
   text-decoration: none;
 }
-.subtitle { font-size: 1.15rem; font-style: italic; margin-top: 6px !important; color: var(--muted); }
-.place-date {
-  font-family: "Noto Sans", Arial, sans-serif;
-  margin-top: 14px !important;
-  color: var(--accent);
-  font-weight: 600;
+.conf-head .subtitle,
+.conf-head .place-date,
+.conf-head .venue {
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--ink);
 }
+.conf-head .subtitle { margin-top: 6px; }
+.conf-head .place-date { margin-top: 12px; }
 .site-footer {
   margin-top: 64px;
   background: var(--band);
@@ -184,8 +189,15 @@ h2 + table tr.independent-session td { border-top: none; }
 .intro { text-align: center; color: var(--muted); font-style: italic; margin: 4px 0 12px; }
 
 /* ---------- venue ---------- */
-.venue { margin-top: 16px !important; font-size: 1rem; line-height: 1.55; }
-.venue a { color: var(--accent-dark); }
+.conf-head .venue { margin-top: 8px; }
+.conf-head .venue a {
+  color: inherit;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.conf-head .venue a:hover,
+.conf-head .venue a:focus-visible { color: var(--accent-dark); text-decoration-color: currentColor; }
 .nowrap { white-space: nowrap; }
 .venue-map p { margin: 8px 0 14px; }
 .venue-map iframe { width: 100%; height: 420px; border: 1px solid var(--rule); display: block; }
