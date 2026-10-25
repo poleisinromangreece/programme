@@ -82,8 +82,8 @@ published: true
   <tr class="session-paper">
     <td>11:45</td>
     <td>12:15</td>
-    <td>Παύλος Καρβώνης</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Karvonis.html">Η κατοίκηση στην περιοχή νοτίως της Ακρόπολης των Αθηνών κατά τη ρωμαϊκή εποχή με βάση τα αρχαιολογικά δεδομένα</a></td>
+    <td>Κωνσταντίνος Ζάχος</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Zachos.html">Institutions, Cults, and Urban Planning in Nicopolis: Shaping an Imperial City from Augustus to the Third Century C.E.</a></td>
   </tr>
 
   <tr class="session-paper">
@@ -128,27 +128,20 @@ published: true
   <tr class="session-paper">
     <td>15:30</td>
     <td>16:00</td>
-    <td>Κωνσταντίνος Ζάχος</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Zachos.html">Institutions, Cults, and Urban Planning in Nicopolis: Shaping an Imperial City from Augustus to the Third Century C.E.</a></td>
-  </tr>
-
-  <tr class="session-paper">
-    <td>16:00</td>
-    <td>16:30</td>
     <td>Δημήτρης Δαμάσκος, Δημητρία Μαλαμίδου, Βαγγέλης Παπαϊωάννου</td>
     <td><a href="{{ site.baseurl }}/abstracts/Damaskos-Malamidou-Papaioannou.html">Η Αμφίπολη κατά τους αυτοκρατορικούς χρόνους</a></td>
   </tr>
 
   <tr class="session-paper session-end">
+    <td>16:00</td>
     <td>16:30</td>
-    <td>17:00</td>
     <td>Μαρία Τσούλη</td>
     <td><a href="{{ site.baseurl }}/abstracts/Tsouni.html">Η Ρωμαϊκή Σπάρτη μέσα από τα πορίσματα της αρχαιολογικής έρευνας των ετών 2006-2025. Συμβολή στην μελέτη της τοπογραφίας, της πολεοδομίας, της οικιστικής οργάνωσης, των χώρων λατρείας και των χώρων ταφής της ρωμαϊκής πόλης</a></td>
   </tr>
 
   <tr class="break-row">
+    <td>16:30</td>
     <td>17:00</td>
-    <td>17:30</td>
     <td></td>
     <td>Διάλειμμα</td>
   </tr>
@@ -162,24 +155,31 @@ published: true
   </tr>
 
   <tr class="session-paper">
+    <td>17:00</td>
     <td>17:30</td>
-    <td>18:00</td>
     <td>Γεωργία Γαλάνη</td>
     <td><a href="{{ site.baseurl }}/abstracts/Galani.html">Η Μακεδονία την περίοδο των Φλαβίων: αυτοκρατορική ιδεολογία και επαρχιακή πραγματικότητα στα νομίσματα μιας ρωμαϊκής επαρχίας</a></td>
   </tr>
 
   <tr class="session-paper">
+    <td>17:30</td>
     <td>18:00</td>
-    <td>18:30</td>
     <td>Σωκράτης Κουρσούμης</td>
     <td><a href="{{ site.baseurl }}/abstracts/Koursoumis.html">Imperial Cults in Colonia Laus Iulia Corinthiensis</a></td>
+  </tr>
+
+  <tr class="session-paper">
+    <td>18:00</td>
+    <td>18:30</td>
+    <td>Hans R. Goette</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Goette.html">The portraiture of emperor Caligula in the Greek cities</a></td>
   </tr>
 
   <tr class="session-paper session-end">
     <td>18:30</td>
     <td>19:00</td>
-    <td>Hans R. Goette</td>
-    <td><a href="{{ site.baseurl }}/abstracts/Goette.html">The portraiture of emperor Caligula in the Greek cities</a></td>
+    <td>Χρυσάνθη Τσούλη, Ελένη Καλάβρια, Giuseppe Mazzilli</td>
+    <td><a href="{{ site.baseurl }}/abstracts/Tsouli_et_al.html">Imperial Presence in the Monumental Landscape of Roman Athens: New Evidence from Inscribed Architectural Members</a></td>
   </tr>
 
 </table>
@@ -436,7 +436,7 @@ published: true
   <tr class="independent-session">
     <td>17:00</td>
     <td>17:45</td>
-    <td></td>
+    <td>Κώστας Μπουραζέλης</td>
     <td>Roman Citizenship and its Value in the Roman Empire until and after the Constitutio Antoniniana</td>
   </tr>
 

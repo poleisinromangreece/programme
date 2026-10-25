@@ -36,7 +36,7 @@ EXCEL_DIR = r'D:\Users\Georgios\Desktop\Archive\Συνέδρια\2026-12-03–05
 # keyword found in column D (speakers)  ->  abstract file name (without .md)
 SLUGS = [
     ('Πετρόχειλος', 'Petrochilos'), ('Ευαγγελίδης', 'Evangelidis'), ('Καντηρέα', 'Kantirea'),
-    ('Τσατσαρώνη', 'Tsatsaroni'), ('Καρβώνης', 'Karvonis'), ('Αντωνιάδης', 'Antoniadis'),
+    ('Τσατσαρώνη', 'Tsatsaroni'), ('Αντωνιάδης', 'Antoniadis'),
     ('Παπαγιάννη', 'Papagianni'), ('Δαμάσκος', 'Damaskos-Malamidou-Papaioannou'), ('Sève', 'Seve'),
     ('Πετράκης', 'Petrakis-Tsolakis-Chaniotis'), ('Κωνσταντίνος Ζάχος', 'Zachos'), ('Ζουμπάκη', 'Zoumpaki'),
     ('Κουκοβασίλης', 'Koukovasilis'), ('Θεοδώρου', 'Theodorou'), ('Νίγδελης', 'Nigdelis'),
@@ -47,7 +47,7 @@ SLUGS = [
     ('Di Napoli', 'Di_Napoli'), ('Καραμπίνης', 'Karambinis'), ('Κωνσταντινίδης', 'Konstantinidis'),
     ('Καζακίδη', 'Kazakidi'), ('Λεβέντη', 'Leventi'), ('Κοκκίνη', 'Kokkini-Mourthos'),
     ('Γρηγορόπουλος', 'Grigoropoulos'), ('Παπαγεωργιάδου', 'Papageorgiadou'), ('Μηντζαρίδου', 'Minartzidou'),
-    ('Τσούλη', 'Tsouni'),
+    ('Χρυσάνθη Τσούλη', 'Tsouli_et_al'), ('Μαρία Τσούλη', 'Tsouni'),
 ]
 BREAKS = ('Διάλειμμα', 'Μεσημεριανό')          # rows rendered as break-row
 
@@ -116,7 +116,7 @@ def parse(path):
         elif str(ws.cell(r, 4).value or '').strip().startswith('Πρόεδρος'):   # chair: name in column E
             day['items'].append({'type': 'chair', 'name': str(e or '').strip()})
         elif e:                                                      # break / other item
-            day['items'].append({'type': 'break' if e.startswith(BREAKS) else 'event', 'title': e.strip(),
+            day['items'].append({'type': 'break' if e.startswith(BREAKS) else 'event', 'title': e.strip(), 'speakers': str(ws.cell(r, 4).value or '').strip(),
                                  'start': hhmm(bk.value(bk.main, f'B{r}')), 'end': hhmm(bk.value(bk.main, f'C{r}'))})
     return days
 
@@ -157,7 +157,7 @@ def render(days):
             else:
                 cls = 'break-row' if it['type'] == 'break' else 'independent-session'
                 out += [f'  <tr class="{cls}">', f'    <td>{it["start"]}</td>', f'    <td>{it["end"]}</td>',
-                        '    <td></td>', f'    <td>{esc(it["title"])}</td>', '  </tr>', '']
+                        f'    <td>{esc(it.get("speakers", ""))}</td>', f'    <td>{esc(it["title"])}</td>', '  </tr>', '']
         out += ['</table>', '']
     return '\n'.join(out)
 
