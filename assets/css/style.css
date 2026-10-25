@@ -209,3 +209,18 @@ h2 + table tr.independent-session td { border-top: none; }
 
 .conference-title { margin: 12px auto 0 !important; max-width: 840px; }
 .day-nav + h2 { margin-top: 2rem; }
+
+/* Compact identity on abstract pages keeps the paper above the fold. */
+.abstract-masthead {
+  padding: 12px 0;
+  background: var(--band);
+  border-bottom: 1px solid var(--accent);
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.abstract-masthead .wrap { max-width: 800px; }
+.abstract-masthead a { color: var(--ink); text-decoration: none; }
+.abstract-masthead a:hover,
+.abstract-masthead a:focus-visible { text-decoration: underline; }
+.abstract-page main { padding-top: 12px; }

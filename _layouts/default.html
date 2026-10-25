@@ -10,7 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body>
+<body{% if page.layout == 'abstract' %} class="abstract-page"{% endif %}>
+  {% if page.layout == 'abstract' %}
+  <header class="abstract-masthead">
+    <div class="wrap">
+      <a href="{{ '/' | relative_url }}" title="{{ site.title | escape }}">Η Ελλάδα στη Ρωμαϊκή Οικουμένη</a>
+    </div>
+  </header>
+  {% else %}
   <header class="society-bar">
     <div class="wrap society-inner">
       <a class="society-logo" href="https://www.archetai.gr/" title="{{ site.organiser }}">
@@ -35,6 +42,7 @@
       {% endif %}
     </div>
   </section>
+  {% endif %}
 
   <main class="wrap">
     {{ content }}
