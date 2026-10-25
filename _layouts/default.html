@@ -24,6 +24,8 @@
       <a class="conference-logo" href="{{ '/' | relative_url }}">
         <img src="{{ '/assets/images/arch_logo_dark-gray.svg' | relative_url }}" width="760" height="971" alt="{{ site.title | escape }} — {{ site.subtitle | escape }}">
       </a>
+      <p class="conference-title"><a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
+      <p class="subtitle">{{ site.subtitle }}</p>
       <p class="place-date">{{ site.place_date }}</p>
       {% if page.url == '/' %}
       <p class="venue">

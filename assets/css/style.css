@@ -45,7 +45,7 @@ a { color: var(--accent); }
 .conf-head p { margin: 0; }
 .site-title {
   display: block;
-  font-size: clamp(1.5rem, 3.6vw, 2.2rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
   font-weight: 600;
   line-height: 1.25;
   color: var(--ink);
@@ -193,4 +193,7 @@ h2 + table tr.independent-session td { border-top: none; }
 
 /* Conference identity */
 .conference-logo { display: inline-block; max-width: 100%; line-height: 0; }
-.conference-logo img { display: block; width: auto; height: auto; max-width: 100%; max-height: 380px; margin: 0 auto; }
+.conference-logo img { display: block; width: auto; height: auto; max-width: 100%; max-height: 304px; margin: 0 auto; }
+
+.conference-title { margin: 12px auto 0 !important; max-width: 840px; }
+.day-nav + h2 { margin-top: 2rem; }
