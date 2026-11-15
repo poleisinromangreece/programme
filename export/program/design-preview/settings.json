@@ -1,0 +1,22 @@
+{
+  "show_map": false,
+  "map_image": "",
+  "show_day_buttons": false,
+  "show_logos": true,
+  "show_intro": true,
+  "hide_empty_chairs": true,
+  "start_each_day_on_new_page": false,
+  "abstract_base_url": "",
+  "chairs": {
+    "day-1 09:15": "",
+    "day-1 11:45": "",
+    "day-1 15:00": "",
+    "day-1 17:00": "",
+    "day-2 09:00": "",
+    "day-2 11:30": "",
+    "day-2 16:00": "",
+    "day-3 09:30": "",
+    "day-3 11:30": "",
+    "day-3 15:00": ""
+  }
+}

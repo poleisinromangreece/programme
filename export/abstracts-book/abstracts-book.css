@@ -1,0 +1,127 @@
+@page {
+  size: A4;
+  margin: 19mm 23mm 19mm;
+  @top-left {
+    content: "ΒΙΒΛΙΟ ΠΕΡΙΛΗΨΕΩΝ";
+    font: 9pt Brill, serif;
+    color: #000;
+  }
+  @bottom-right {
+    content: counter(page);
+    font: 11pt Brill, serif;
+    color: #000;
+  }
+}
+
+@page cover {
+  margin: 12mm;
+  @top-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+:root {
+  --paper: #f6f2e9;
+  --ink: #000;
+  --navy: #273747;
+  --accent: #8d4b38;
+  --rule: #d5cec1;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 12.5pt/1.25 Brill, serif;
+  print-color-adjust: exact;
+}
+
+.cover {
+  page: cover;
+  height: 272mm;
+  background: var(--paper);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.society { display: flex; align-items: center; padding: 4mm 7mm; }
+.society-seal { width: 20mm; height: 20mm; overflow: hidden; }
+.society-seal img { display: block; height: 20mm; margin-left: -2.15mm; }
+.society-wordmark { position: relative; margin-left: auto; width: 83.6mm; height: 12.2mm; overflow: hidden; }
+.society-wordmark img { position: absolute; height: 30mm; left: -35mm; top: -11.1mm; }
+.cover-arch {
+  position: relative;
+  overflow: hidden;
+  min-height: 78mm;
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+}
+.cover-arch .construction { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cover-arch img { position: relative; height: 65mm; filter: brightness(0) invert(1); }
+.cover-title { padding: 10mm 8mm 0; }
+.kicker { letter-spacing: .13em; font-weight: bold; }
+.cover .kicker { margin: 0 0 3mm; font-size: 13pt; }
+.cover h1 { margin: 0; font-size: 35pt; line-height: 1.04; }
+.subtitle { margin: 4mm 0 0; font-size: 21pt; }
+.book-label {
+  display: inline-block;
+  border-top: 1px solid var(--accent);
+  margin: 8mm 0 0;
+  padding-top: 4mm;
+  font-size: 25pt;
+}
+.cover-venue { margin: auto 8mm 9mm; font-size: 16pt; line-height: 1.2; }
+.cover-venue p { margin: 1mm 0; }
+
+.contents, .abstract { break-before: page; }
+.contents h2 { margin: 0; font-size: 25pt; line-height: 1.1; }
+.contents-day {
+  margin: 2mm 0 4mm;
+  padding-bottom: 3mm;
+  border-bottom: 1px solid var(--accent);
+  font-size: 15pt;
+}
+.contents ul { list-style: none; margin: 0; padding: 0; }
+.contents li { break-inside: avoid; }
+.toc-session {
+  margin: 2.5mm 0 1.5mm;
+  font-weight: bold;
+  font-size: 11.5pt;
+  break-after: avoid;
+}
+.entry {
+  display: grid;
+  grid-template-columns: 1fr 9mm;
+  gap: 4mm;
+  border-bottom: .5px solid var(--rule);
+  padding: .9mm 0;
+  color: inherit;
+  font-size: 11.5pt;
+  line-height: 1.13;
+  text-decoration: none;
+}
+.entry-page { align-self: center; text-align: right; font-variant-numeric: lining-nums; }
+.pending { font-size: .9em; }
+.availability { font-size: 10.5pt; margin: 5mm 0 0; }
+
+.article-header {
+  margin-bottom: 4.5mm;
+  padding-bottom: 4mm;
+  border-bottom: 1px solid var(--accent);
+  break-inside: avoid;
+  break-after: avoid;
+}
+.article-header .kicker { font-size: 10pt; margin: 0 0 2mm; }
+.day, .session { margin: 0; font-size: 11pt; }
+.session:empty { display: none; }
+.article-header h2 { font-size: 23pt; line-height: 1.08; margin: 5mm 0 3mm; }
+.authors { font-size: 15pt; font-weight: bold; margin: 0; }
+.affiliation { margin: 1mm 0 0; font-size: 11pt; }
+.abstract-body h2 {
+  margin: 4mm 0 2mm;
+  font-size: 12pt;
+  break-after: avoid;
+}
+.abstract-body p { margin: 0 0 2.6mm; orphans: 3; widows: 3; }
+
+.abstract-body a { color: inherit; }
