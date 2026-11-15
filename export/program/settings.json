@@ -18,5 +18,25 @@
     "day-3 09:30": "",
     "day-3 11:30": "",
     "day-3 15:00": ""
+  },
+  "trifold": {
+    "order": [
+      "D",
+      "E",
+      "F",
+      "A"
+    ],
+    "max_font_pt": 9,
+    "min_font_pt": 6,
+    "cover_label": "ΔΙΕΘΝΕΣ ΣΥΝΕΔΡΙΟ",
+    "cover_title": [
+      "Οι πόλεις της Ελλάδας",
+      "από τον Αύγουστο έως την Τετραρχία"
+    ],
+    "cover_logo": "cover-society-logo.png",
+    "cover_image": "cover-arch.png",
+    "cover_qr": "cover-qr.png",
+    "cover_background": "#f4f1e8",
+    "cover_image_background": "#4e1818"
   }
 }

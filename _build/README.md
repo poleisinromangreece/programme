@@ -39,7 +39,8 @@ the newest `Programma_synedriou*.xlsx` of `Πρόγραμμα Συνεδρίου
 the git clone yourself.
 
 Chairs: a row with `Πρόεδρος:` in column D (Speakers) is shown as a
-"Πρόεδρος: …" line, with the name taken from column E. Leave E empty
+"Πρόεδρος: …" line. Type the name after the colon in column D
+(`Πρόεδρος: Όνομα Επώνυμο`) or put it in column E. Leave both empty
 to show the line with no name.
 
 Settings at the top of `build.py`: dates of the three days, page intro, URL

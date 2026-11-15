@@ -113,8 +113,11 @@ def parse(path):
             day['items'].append({'type': 'talk', 'no': int(a), 'speakers': sp, 'title': (e or '').strip(),
                                  'start': hhmm(bk.value(bk.main, f'B{r}')), 'end': hhmm(bk.value(bk.main, f'C{r}')),
                                  'slug': slug_for(sp)})
-        elif str(ws.cell(r, 4).value or '').strip().startswith('Πρόεδρος'):   # chair: name in column E
-            day['items'].append({'type': 'chair', 'name': str(e or '').strip()})
+        elif str(ws.cell(r, 4).value or '').strip().startswith('Πρόεδρος'):   # chair
+            # the name is either in column E or after "Πρόεδρος:" in column D itself
+            d = str(ws.cell(r, 4).value).strip()
+            name = str(e or '').strip() or re.sub(r'^Πρόεδρο[ςι]\s*:?\s*', '', d).strip()
+            day['items'].append({'type': 'chair', 'name': name})
         elif e:                                                      # break / other item
             day['items'].append({'type': 'break' if e.startswith(BREAKS) else 'event', 'title': e.strip(), 'speakers': str(ws.cell(r, 4).value or '').strip(),
                                  'start': hhmm(bk.value(bk.main, f'B{r}')), 'end': hhmm(bk.value(bk.main, f'C{r}'))})

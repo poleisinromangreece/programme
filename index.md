@@ -37,7 +37,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Νίκος Παπαζαρκάδας</td>
   </tr>
 
   <tr class="session-paper">
@@ -76,7 +76,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Άγγελος Χανιώτης</td>
   </tr>
 
   <tr class="session-paper">
@@ -115,7 +115,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Παυλίνα Καραναστάση</td>
   </tr>
 
   <tr class="session-paper">
@@ -151,7 +151,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Αθανάσιος Ριζάκης</td>
   </tr>
 
   <tr class="session-paper">
@@ -198,7 +198,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Σταύρος Βλίζος</td>
   </tr>
 
   <tr class="session-paper">
@@ -241,7 +241,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Χριστίνα Κοκκινιά</td>
   </tr>
 
   <tr class="session-paper">
@@ -291,7 +291,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Σοφία Ζουμπάκη</td>
   </tr>
 
   <tr class="session-paper">
@@ -338,7 +338,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Στυλιανός Κατάκης</td>
   </tr>
 
   <tr class="session-paper">
@@ -370,7 +370,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Θεοδοσία Στεφανίδου-Τιβερίου</td>
   </tr>
 
   <tr class="session-paper">
@@ -402,7 +402,7 @@ published: true
   </tr>
 
   <tr class="chair-row">
-    <td colspan="4">Πρόεδρος: </td>
+    <td colspan="4">Πρόεδρος: Κωνσταντίνος Ζάχος/Νίκος Καλτσάς</td>
   </tr>
 
   <tr class="session-paper">
